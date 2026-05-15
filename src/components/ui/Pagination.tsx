@@ -66,15 +66,6 @@ export const Pagination = ({ totalPages, currentPage }: PaginationProps) => {
       {/* ページ番号ボタン */}
       <div className="flex gap-1">
         {allPages.map((page, index) => {
-          // // 省略記号(...)の場合
-          // if (page === '...') {
-          //   return (
-          //     <span key={`ellipsis-${index}`} className="text-slate-500">
-          //       ...
-          //     </span>
-          //   );
-          // }
-
           // その他のページ番号（クリック可能なリンク）
           return (
             <Link

@@ -4,14 +4,13 @@ import { Pagination } from "../ui/Pagination";
 
 const ITEMS_PER_PAGE = 10;
 
-// 1. 'use client' を削除し、asyncコンポーネントにする
 export const RecruitList = async ({ 
   searchParams = {}
 }: { 
   searchParams: { category?: string | string[], page?: string, min_salary?: string } 
 }) => {
 
-  // 2. パラメータの取得（Next.jsのページコンポーネントから渡される想定）
+  // パラメータの取得
   const categoryParam = searchParams.category;
   const categories = categoryParam 
     ? (Array.isArray(categoryParam) ? categoryParam : [categoryParam])
@@ -48,7 +47,7 @@ export const RecruitList = async ({
   return (
     <main className="p-4">
       <h2 className="text-2xl font-bold ">求人一覧</h2>
-      {/* 4. Supabaseの 'count' から取得した総件数を表示 */}
+      {/* Supabaseの 'count' から取得した総件数を表示 */}
       <p className="mb-4 text-sm">該当件数: {count ?? 0}件</p>
       
       <div className="space-y-4">

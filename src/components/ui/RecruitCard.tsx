@@ -10,8 +10,8 @@ export const RecruitCard = (props: RecruitCardProps) => {
   return (
     <div className="border rounded pt-2 pl-4 h-36 border-slate-300">
       <h3 className="text-lg font-bold mb-1">{props.title}</h3>
-      <p className="text-gray-600 mb-1">カテゴリ: {getJobCategoryName(props.category)}</p>
-      <p className="text-gray-600">年収: {props.salary}万円</p>
+      <p className="mb-1">カテゴリ: {getJobCategoryName(props.category)}</p>
+      <p>年収: {props.salary}万円</p>
     </div>
   );
 }

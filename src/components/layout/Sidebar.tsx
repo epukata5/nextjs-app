@@ -5,13 +5,13 @@ import { JOB_CATEGORY_OPTIONS } from "@/contents/job_category";
 
 // 年収の選択肢を定義
 const SALARY_OPTIONS = [
-  { label: '指定なし▼', value: '0' },
-  { label: '300万円以上▼', value: '300' },
-  { label: '400万円以上▼', value: '400' },
-  { label: '500万円以上▼', value: '500' },
-  { label: '600万円以上▼', value: '600' },
-  { label: '800万円以上▼', value: '800' },
-  { label: '1000万円以上▼', value: '1000' },
+  { label: '指定なし ▼', value: '0' },
+  { label: '300万円以上 ▼', value: '300' },
+  { label: '400万円以上 ▼', value: '400' },
+  { label: '500万円以上 ▼', value: '500' },
+  { label: '600万円以上 ▼', value: '600' },
+  { label: '800万円以上 ▼', value: '800' },
+  { label: '1000万円以上 ▼', value: '1000' },
 ];
 
 export const Sidebar = () => {

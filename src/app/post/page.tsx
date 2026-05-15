@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { recruitmentSchema, RecruitmentFormData, JOB_CATEGORIES, JOB_CATEGORY_LABELS} from "@/lib/recruitment";
 import { submitRecruitment } from "@/lib/actions";
-import { FaCaretDown } from "react-icons/fa";
 
 export default function Post() {
 
@@ -30,7 +29,7 @@ export default function Post() {
         if (result.errors.category) setError("category", { message: result.errors.category[0] });
       } else {
         // DB保存エラーなどの全体エラー
-        alert(result.message); // 実稼働時はtoastライブラリ(react-hot-toast等)がおすすめです
+        alert(result.message);
       }
     }
   };
